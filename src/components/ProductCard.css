@@ -1,0 +1,168 @@
+.product-card-premium {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  transition: var(--transition-smooth);
+  height: 100%;
+  width: 100%;
+}
+
+/* Image Area */
+.product-image-area {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.product-image-inner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 0.85;
+  /* As per image */
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  /* Soft shadow */
+  background: #fdfcf9;
+}
+
+.product-img-main {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card-premium:hover .product-img-main {
+  transform: scale(1.05);
+}
+
+.sale-badge-pill {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1.4rem;
+  border-radius: 50px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+
+/* Details Section */
+.product-details-premium {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.15rem;
+  padding: 0 0.5rem;
+  justify-content: flex-start;
+}
+
+.product-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-name-modern {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.1;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.product-brand-modern {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.75rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0.2rem 0 0;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+/* Rating */
+.product-rating-modern {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0.15rem 0;
+}
+
+.stars-group {
+  display: flex;
+  gap: 2px;
+  color: #000;
+  /* Black stars as per image */
+}
+
+.rating-count-modern {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  font-weight: 400;
+}
+
+/* Pricing */
+.product-price-modern {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 0.2rem 0 0.5rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+.price-original {
+  color: #888;
+  text-decoration: line-through;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.price-discounted {
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* Button */
+.btn-add-to-cart-pill {
+  width: 100%;
+  margin-top: auto;
+  padding: 0.75rem;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 50px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-add-to-cart-pill:hover {
+  background: #000;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .product-image-inner {
+    border-radius: 20px;
+  }
+
+  .product-name-modern {
+    font-size: 1.1rem;
+  }
+
+  .price-discounted {
+    font-size: 1.1rem;
+  }
+}

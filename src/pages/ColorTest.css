@@ -1,0 +1,62 @@
+.color-test-page {
+    min-height: 100vh;
+    background: var(--light-color);
+    padding: 2rem 0;
+}
+
+.color-box {
+    padding: 3rem 2rem;
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 150px;
+    transition: var(--transition-smooth);
+}
+
+.color-box:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.color-box span {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.color-box code {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.shadow-box {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    min-height: 100px;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: var(--text-dark);
+}
+
+h3,
+h4 {
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin: 0;
+    opacity: 0.8;
+}

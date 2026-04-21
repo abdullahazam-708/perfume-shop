@@ -1,0 +1,261 @@
+.deal-page {
+    background-color: #fff;
+}
+
+.deal-hero {
+    background-color: var(--accent-color, #FFF9F0);
+    padding: 100px 0 80px;
+    text-align: center;
+}
+
+.deal-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.deal-badge {
+    display: inline-block;
+    background-color: #008060;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+.deal-hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+.deal-description {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.countdown-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.countdown-values {
+    display: flex;
+    gap: 20px;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    min-width: 90px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.time-box .value {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.time-box .label {
+    font-size: 0.75rem;
+    color: #71717a;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.discount-pill {
+    display: inline-block;
+    background: #1a1a1a;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* Products Section */
+.deal-products {
+    padding: 100px 0;
+}
+
+.deal-products .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.deal-products h2 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.no-products {
+    text-align: center;
+    font-style: italic;
+    color: #71717a;
+}
+
+/* Newsletter Section */
+.deal-newsletter {
+    padding: 0 0 100px;
+}
+
+.newsletter-box {
+    background: #1a1a1a;
+    color: white;
+    padding: 80px 40px;
+    border-radius: 24px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.newsletter-box svg {
+    margin-bottom: 24px;
+    color: #3ad3b9;
+}
+
+.newsletter-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.newsletter-box p {
+    color: #a1a1aa;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 12px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    background: #27272a;
+    border: 1px solid #3f3f46;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.newsletter-form button {
+    background: white;
+    color: #1a1a1a;
+    border: none;
+    padding: 0 30px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.newsletter-form button:hover {
+    background: #f4f4f5;
+    transform: translateY(-2px);
+}
+
+/* Empty State */
+.deal-page-empty {
+    padding: 150px 0;
+    text-align: center;
+}
+
+.empty-icon {
+    color: #008060;
+    margin-bottom: 30px;
+}
+
+.deal-page-empty h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.deal-page-empty p {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #71717a;
+    font-size: 1.2rem;
+}
+
+/* Loading State */
+.deal-page-loading {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f1f1f4;
+    border-top-color: #008060;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .deal-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .countdown-values {
+        gap: 10px;
+    }
+
+    .time-box {
+        min-width: 70px;
+        padding: 10px;
+    }
+
+    .time-box .value {
+        font-size: 1.5rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-box {
+        padding: 40px 20px;
+    }
+}

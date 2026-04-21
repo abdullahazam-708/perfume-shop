@@ -1,0 +1,2 @@
+one thing add to cart page are not responsive for mobile 
+if the item is out of stock set the logic item will not bo selled by the coustomere 
